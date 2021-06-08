@@ -1,0 +1,50 @@
+{
+  "projectTitle": "小玲 - QQ娱乐机器人",
+  "projectDescription": "NextBook is quick and easy way to buid technical books or documentation that support modern standards and run blazingly fast. It's built with MDX, Next.js and React and works by compiling markdown or MDX down to plain static html.",
+  "projectURL": "https://rin.github.io",
+  "locale": "zh_CN",
+  "text": {
+    "Tags": "标签",
+    "Last Update": "最后更新",
+    "Toggle color mode": "切换颜色模式(T)",
+    "Toggle dark mode": "切换深色模式(T)",
+    "Toggle light mode": "切换亮色模式(T)",
+    "Copy to clipboard": "复制到剪贴板",
+    "Copy link": "复制当前段落链接",
+    "Copy": "复制",
+    "Copied!": "已复制！",
+    "Page Contents": "页面内容",
+    "Toggle mobile sidebar": "切换移动设备侧边栏",
+    "Previous chapter": "上一章(←)",
+    "Next chapter": "下一章(→)",
+    "Figure": "Figure"
+  },
+  "navbarItems": [
+    {
+      "title": "关于",
+      "path": "/intro/index"
+    },
+    {
+      "title": "功能列表",
+      "path": "/functions/list"
+    }
+  ],
+  "toc": [
+    {
+      "chapters": [{ "title": "关于小玲", "path": "/intro/index" }]
+    },
+    {
+      "part": "功能",
+      "chapters": [
+        {
+          "title": "功能列表",
+          "path": "/functions/list"
+        },
+        {
+          "title": "帮助",
+          "path": "/functions/help"
+        }
+      ]
+    }
+  ]
+}
