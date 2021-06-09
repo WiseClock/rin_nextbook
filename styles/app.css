@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  color: #4d76ab;
+}
+
 code {
   margin: 0 .25em;
 }
