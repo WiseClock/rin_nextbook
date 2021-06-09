@@ -1,7 +1,7 @@
 {
   "projectTitle": "小玲 - QQ娱乐机器人",
-  "projectDescription": "NextBook is quick and easy way to buid technical books or documentation that support modern standards and run blazingly fast. It's built with MDX, Next.js and React and works by compiling markdown or MDX down to plain static html.",
-  "projectURL": "https://rin.github.io",
+  "projectDescription": "小玲是一款首发于2011年11月24日的QQ聊天机器人。",
+  "projectURL": "https://rin.vercel.com",
   "locale": "zh_CN",
   "text": {
     "Tags": "标签",
@@ -17,7 +17,7 @@
     "Toggle mobile sidebar": "切换移动设备侧边栏",
     "Previous chapter": "上一章(←)",
     "Next chapter": "下一章(→)",
-    "Figure": "Figure"
+    "Figure": "图片"
   },
   "navbarItems": [
     {
