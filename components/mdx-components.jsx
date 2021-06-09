@@ -164,7 +164,7 @@ const Heading = (props) => {
   const Tag = 'h' + props.level
 
   useEffect(() => {
-    setlocation(`${window.location.href}#${encodeURIComponent(props.id)}`)
+    setlocation(`${window.location.href.split('#', 2)[0]}#${encodeURIComponent(props.id)}`)
   })
 
   return (
