@@ -75,8 +75,31 @@ li p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 770px) {
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4,
+  .content-container h5,
+  .content-container h6 {
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+}
+
 /* Use custom scrollbars. */
 @media (min-width: 769px) {
+
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4,
+  .content-container h5,
+  .content-container h6 {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+
   /* Base scrollbar */
 
   /* Firefox */
