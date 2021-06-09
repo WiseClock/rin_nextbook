@@ -63,9 +63,24 @@ export const CustomLink = (props) => {
     return <a {...props} className='underline' />
   }
 
+  const onClick = () => setTimeout(() => {
+    const path = window.location.hash
+    if (path && path.includes("#")) {
+      const id = path.replace("#", "")
+      if (id) {
+        const el = window.document.getElementById(decodeURIComponent(id))
+        const r = el.getBoundingClientRect()
+        window.top.scroll({
+          top: pageYOffset + r.top,
+          behavior: "smooth",
+        })
+      }
+    }
+  }, 1000)
+
   return (
     <Link {...props}>
-      <a {...props} className='underline' />
+      <a {...props} onClick={onClick} className='underline' />
     </Link>
   )
 }
