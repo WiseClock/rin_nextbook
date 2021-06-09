@@ -6,6 +6,10 @@ code {
   margin: 0 .25em;
 }
 
+.toc-container ul {
+  overflow-y: scroll;
+}
+
 /* Diffs without line numbering */
 .clean .linenumber {
   display: none !important;

@@ -45,6 +45,9 @@
           "path": "/feature/help"
         }
       ]
+    },
+    {
+      "chapters": [{ "title": "更新历史", "path": "/intro/updates" }]
     }
   ]
 }
