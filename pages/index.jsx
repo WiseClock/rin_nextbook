@@ -16,13 +16,12 @@ export default function HomePage() {
         欢迎阅读小玲使用手册！
       </div>
       <div className='text-center'>
-        <p>占位符</p>
-        <p>占位符</p>
         <p>
-          将自动转入{' '}
+          现在自动转入{' '}
           <Link href={docsIndex}>
             <a className='underline'>文档页面</a>
           </Link>
+          ……
         </p>
       </div>
     </div>
