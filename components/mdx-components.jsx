@@ -76,7 +76,7 @@ export const CustomLink = (props) => {
         })
       }
     }
-  }, 1000)
+  }, 500)
 
   return (
     <Link {...props}>
