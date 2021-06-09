@@ -27,6 +27,10 @@
     {
       "title": "功能列表",
       "path": "/feature/list"
+    },
+    {
+      "title": "更新历史",
+      "path": "/version/all"
     }
   ],
   "toc": [
@@ -47,7 +51,7 @@
       ]
     },
     {
-      "chapters": [{ "title": "更新历史", "path": "/intro/updates" }]
+      "chapters": [{ "title": "更新历史", "path": "/version/all" }]
     }
   ]
 }
