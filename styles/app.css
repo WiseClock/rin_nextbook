@@ -204,3 +204,44 @@ li p {
     border-color: rgba(255, 255, 255, 0.05);
   }
 }
+
+:root {
+  /* 字体大小 */
+  --waline-font-size: 16px;
+
+  /* 常规颜色 */
+  --waline-white: #cbd5e1 !important;
+
+  /* 主题色 */
+  --waline-theme-color: #64748b !important;
+  --waline-active-color: #4d76ab !important;
+
+  /* 布局颜色 */
+  --waline-bgcolor: #cbd5e1 !important;
+  --waline-bgcolor-light: #cbd5e1 !important;
+  --waline-bgcolor-hover: #cbd5e1 !important;
+  --waline-border-color: #94a3b8 !important;
+
+  /* 信息 */
+  --waline-info-bgcolor: #cbd5e1 !important;
+  --waline-info-color: #64748b !important;
+}
+
+html.dark {
+  /* 常规颜色 */
+  --waline-white: #334155 !important;
+
+  /* 布局颜色 */
+  --waline-theme-color: #64748b !important;
+  --waline-active-color: #4d76ab !important;
+
+  /* 布局颜色 */
+  --waline-bgcolor: #334155 !important;
+  --waline-bgcolor-light: #334155 !important;
+  --waline-bgcolor-hover: #334155 !important;
+  --waline-border-color: #94a3b8 !important;
+
+  /* 信息 */
+  --waline-info-bgcolor: #334155 !important;
+  --waline-info-color: #94a3b8 !important;
+}
