@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight } from 'components/svg-icons'
 import config from 'config/config.json'
 import Link from 'next/link'
+import Text from 'components/text'
 import { useRouter } from 'next/router'
 import { useShortcuts } from 'react-shortcuts-hook'
 import { _ } from './text'
@@ -46,6 +47,7 @@ export default function PageNav() {
 
   return (
     <div className='my-2 no-print'>
+      <div className='h-20'></div>
       <div
         className={`flex flex-col-reverse sm:flex-row ${
           !prevChapter && 'justify-end'
@@ -54,13 +56,18 @@ export default function PageNav() {
         {prevChapter && (
           <Link href={prevChapter.path}>
             <a
-              className={`border border-transparent flex w-full justify-center md:justify-between rounded m-1 p-3 bg-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-600 dark:hover:text-gray-100 ${
+              className={`group border border-transparent flex w-full items-center justify-center md:justify-between rounded m-1 p-3 bg-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-600 dark:hover:text-gray-100 ${
                 !nextChapter && 'w-full md:max-w-sm'
               }`}
               title={_('Previous chapter')}
             >
               <ArrowLeft />
-              <div className='ml-2'>{prevChapter.title}</div>
+              <div className='ml-2'>
+                <div className='text-right text-xs text-gray-500 group-hover:text-gray-600 hidden md:block'>
+                  <Text tid='Previous' />
+                </div>
+                {prevChapter.title}
+              </div>
             </a>
           </Link>
         )}
@@ -68,12 +75,17 @@ export default function PageNav() {
         {nextChapter && (
           <Link href={nextChapter.path}>
             <a
-              className={`border border-transparent flex w-full justify-center md:justify-between rounded m-1 p-3 bg-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-600 dark:hover:text-gray-100 ${
+              className={`group border border-transparent flex w-full items-center justify-center md:justify-between rounded m-1 p-3 bg-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 dark:bg-gray-700 dark:text-gray-200 dark:hover:border-gray-600 dark:hover:text-gray-100 ${
                 !prevChapter && 'w-full md:max-w-sm'
               }`}
               title={_('Next chapter')}
             >
-              <div className='mr-2'>{nextChapter.title}</div>
+              <div className='mr-2'>
+                <div className='text-left text-xs text-gray-500 group-hover:text-gray-600 hidden md:block'>
+                  <Text tid='Next' />
+                </div>
+                {nextChapter.title}
+              </div>
               <ArrowRight />
             </a>
           </Link>

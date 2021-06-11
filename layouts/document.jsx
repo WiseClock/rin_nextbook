@@ -46,17 +46,18 @@ export default function DocumentLayout({ children, frontMatter }) {
           )}
 
           <div className='md-content'>{children}</div>
+          <PageNav />
           <hr className='my-3 mx-1 print:hidden border-gray-300 dark:border-gray-600' />
           {updated && (
             <div className='text-center text-xs'>
-              <Text tid='Last Update' />:{' '}
+              <Text tid='Last Update' />
               {new Date(updated).toLocaleDateString(
                 locale || 'en',
                 dateOptions
               )}
             </div>
           )}
-          <PageNav />
+          <div className='h-14'></div>
         </div>
         {showToc && (
           <div className='toc-container flex-none w-56 hidden lg:block'>

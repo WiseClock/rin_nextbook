@@ -1,11 +1,11 @@
 {
   "projectTitle": "小玲 - QQ娱乐机器人",
   "projectDescription": "小玲是一款首发于2011年11月24日的QQ聊天机器人。",
-  "projectURL": "https://rin.vercel.com",
+  "projectURL": "https://rin.vercel.app",
   "locale": "zh_CN",
   "text": {
     "Tags": "标签",
-    "Last Update": "最后更新",
+    "Last Update": "最后更新：",
     "Toggle color mode": "切换颜色模式(T)",
     "Toggle dark mode": "切换深色模式(T)",
     "Toggle light mode": "切换亮色模式(T)",
@@ -17,6 +17,8 @@
     "Toggle mobile sidebar": "切换移动设备侧边栏",
     "Previous chapter": "上一章(←)",
     "Next chapter": "下一章(→)",
+    "Previous": "上一章",
+    "Next": "下一章",
     "Figure": "图片"
   },
   "navbarItems": [
