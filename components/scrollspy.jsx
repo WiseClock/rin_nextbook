@@ -40,7 +40,7 @@ export default class Scrollspy extends React.Component {
       return // dont update state
     } else {
       const update = items.map((item) => {
-        return { ...item, inView: item === firstTrueItem }
+        return { ...item, inView: item.inView } // item === firstTrueItem
       })
 
       this.setState({ items: update })
