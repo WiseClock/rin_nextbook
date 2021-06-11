@@ -7,7 +7,7 @@ import { _ } from './text'
 
 function ColorModeToggler() {
   const themeCtx = useContext(ThemeContext)
-  useShortcuts(['T'], () => themeCtx.toggleTheme(), [themeCtx.theme])
+  useShortcuts(['alt'], () => themeCtx.toggleTheme(), [themeCtx.theme])
 
   return (
     <div className='flex items-center space-x-2'>

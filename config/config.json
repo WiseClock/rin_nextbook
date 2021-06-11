@@ -6,9 +6,9 @@
   "text": {
     "Tags": "标签",
     "Last Update": "最后更新：",
-    "Toggle color mode": "切换颜色模式(T)",
-    "Toggle dark mode": "切换深色模式(T)",
-    "Toggle light mode": "切换亮色模式(T)",
+    "Toggle color mode": "切换颜色模式(ALT)",
+    "Toggle dark mode": "切换深色模式(ALT)",
+    "Toggle light mode": "切换亮色模式(ALT)",
     "Copy to clipboard": "复制到剪贴板",
     "Copy link": "复制当前段落链接",
     "Copy": "复制",
