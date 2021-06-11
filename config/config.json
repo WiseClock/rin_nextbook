@@ -55,6 +55,26 @@
         {
           "title": "头衔",
           "path": "/feature/title"
+        },
+        {
+          "title": "钱袋",
+          "path": "/feature/wallet"
+        },
+        {
+          "title": "好感度",
+          "path": "/feature/favorability"
+        },
+        {
+          "title": "成就",
+          "path": "/feature/achievements"
+        },
+        {
+          "title": "猜拳",
+          "path": "/feature/rock-paper-scissors"
+        },
+        {
+          "title": "群功能",
+          "path": "/feature/group-toggle"
         }
       ]
     },
