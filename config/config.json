@@ -30,7 +30,7 @@
     },
     {
       "title": "更新历史",
-      "path": "/version/all"
+      "path": "/version/changelog"
     }
   ],
   "toc": [
@@ -47,11 +47,19 @@
         {
           "title": "帮助",
           "path": "/feature/help"
+        },
+        {
+          "title": "昵称",
+          "path": "/feature/nickname"
+        },
+        {
+          "title": "头衔",
+          "path": "/feature/title"
         }
       ]
     },
     {
-      "chapters": [{ "title": "更新历史", "path": "/version/all" }]
+      "chapters": [{ "title": "更新历史", "path": "/version/changelog" }]
     }
   ]
 }
