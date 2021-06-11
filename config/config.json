@@ -19,7 +19,7 @@
     "Next chapter": "下一章(→)",
     "Previous": "上一章",
     "Next": "下一章",
-    "Figure": "图片"
+    "Figure": "图"
   },
   "navbarItems": [
     {
@@ -57,6 +57,10 @@
         {
           "title": "头衔",
           "path": "/feature/title"
+        },
+        {
+          "title": "等级",
+          "path": "/feature/level"
         },
         {
           "title": "钱袋",

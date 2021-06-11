@@ -13,7 +13,7 @@ updated: '2021-06-10'
 [帮助](/feature/help)|显示小玲所有公开功能的指令列表。
 [昵称](/feature/nickname)|显示或设置玩家昵称。
 [头衔](/feature/title)|显示或设置玩家头衔。
-等级|显示玩家等级。
+[等级](/feature/level)|显示玩家等级。
 [钱袋](/feature/wallet)|显示财富信息。
 [好感度](/feature/favorability)|显示玩家好感度。
 [成就](/feature/achievements)|显示成就列表。
