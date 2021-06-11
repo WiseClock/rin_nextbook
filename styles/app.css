@@ -84,28 +84,30 @@ li p {
 }
 
 @media (max-width: 770px) {
-  .content-container h1,
-  .content-container h2,
-  .content-container h3,
-  .content-container h4,
-  .content-container h5,
-  .content-container h6 {
+  .md-content h1,
+  .md-content h2,
+  .md-content h3,
+  .md-content h4,
+  .md-content h5,
+  .md-content h6 {
     padding-top: 50px;
     margin-top: -50px;
+    pointer-events: none;
   }
 }
 
 /* Use custom scrollbars. */
 @media (min-width: 769px) {
 
-  .content-container h1,
-  .content-container h2,
-  .content-container h3,
-  .content-container h4,
-  .content-container h5,
-  .content-container h6 {
+  .md-content h1,
+  .md-content h2,
+  .md-content h3,
+  .md-content h4,
+  .md-content h5,
+  .md-content h6 {
     padding-top: 70px;
     margin-top: -70px;
+    pointer-events: none;
   }
 
   /* Base scrollbar */
