@@ -245,3 +245,13 @@ html.dark {
   --waline-info-bgcolor: #334155 !important;
   --waline-info-color: #94a3b8 !important;
 }
+
+.vbadge {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0.15rem;
+}
