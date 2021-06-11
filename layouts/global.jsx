@@ -30,7 +30,6 @@ export default function GlobalLayout({ title, part, description, children }) {
         <link rel='icon' href='/icon.svg' type='image/svg+xml' />
         <link rel='apple-touch-icon' href='/512.png' />
         <link rel='manifest' href='/manifest.json' />
-        <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.noStyle.js"></script>
       </Head>
 
       <header className='z-40 md:shadow-md bg-gray-200 dark:bg-gray-800 fixed w-screen top-0 h-10 md:h-14 font-medium'>

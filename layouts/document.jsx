@@ -21,6 +21,7 @@ export default function DocumentLayout({ children, frontMatter }) {
       setLocale(browserLocales[0])
     }
 
+    const Waline = require('@waline/client');
     const waline = Waline({
       el: '#waline',
       serverURL: 'https://rin-comments.vercel.app',
@@ -43,7 +44,7 @@ export default function DocumentLayout({ children, frontMatter }) {
       waline.update()
     }
 
-    router.events.on('routeChangeStart', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange)
   }, [])
 
   return (
