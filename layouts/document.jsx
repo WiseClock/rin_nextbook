@@ -18,6 +18,24 @@ export default function DocumentLayout({ children, frontMatter }) {
     if (browserLocales[0] !== undefined) {
       setLocale(browserLocales[0])
     }
+
+    Waline({
+      el: '#waline',
+      serverURL: 'https://rin-comments.vercel.app',
+      copyright: false,
+      placeholder: ' ',
+      visitor: true,
+      emoji: [
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba'
+      ],
+      requiredMeta: ['nick', 'mail'],
+      wordLimit: 500,
+      highlight: false,
+      dark: 'html.dark'
+    })
   }, [])
 
   return (
@@ -46,6 +64,7 @@ export default function DocumentLayout({ children, frontMatter }) {
           )}
 
           <div className='md-content'>{children}</div>
+          <div className="h-12"></div>
           <PageNav />
           <hr className='my-3 mx-1 print:hidden border-gray-300 dark:border-gray-600' />
           {updated && (
@@ -58,6 +77,8 @@ export default function DocumentLayout({ children, frontMatter }) {
             </div>
           )}
           <div className='h-14'></div>
+          <div id='waline'></div>
+          <div className='h-12'></div>
         </div>
         {showToc && (
           <div className='toc-container flex-none w-56 hidden lg:block'>
