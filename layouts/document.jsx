@@ -3,12 +3,14 @@ import PageNav from 'components/page-nav'
 import Text from 'components/text'
 import GlobalLayout from 'layouts/global'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function DocumentLayout({ children, frontMatter }) {
   const showToc = !frontMatter.hide_toc && frontMatter.tocRaw.length > 0
   const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
   const [locale, setLocale] = useState('en')
   const { title, part, description, tags, updated, tocRaw } = frontMatter
+  const router = useRouter()
 
   useEffect(() => {
     const browserLocales =
@@ -19,7 +21,7 @@ export default function DocumentLayout({ children, frontMatter }) {
       setLocale(browserLocales[0])
     }
 
-    Waline({
+    const waline = Waline({
       el: '#waline',
       serverURL: 'https://rin-comments.vercel.app',
       copyright: false,
@@ -36,6 +38,12 @@ export default function DocumentLayout({ children, frontMatter }) {
       highlight: false,
       dark: 'html.dark'
     })
+
+    const handleRouteChange = (_) => {
+      waline.update()
+    }
+
+    router.events.on('routeChangeStart', handleRouteChange)
   }, [])
 
   return (
