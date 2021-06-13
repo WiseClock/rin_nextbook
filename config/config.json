@@ -31,6 +31,10 @@
       "path": "/feature/list"
     },
     {
+      "title": "钓鱼",
+      "path": "/fishing/fishing"
+    },
+    {
       "title": "更新历史",
       "path": "/version/changelog"
     }
@@ -40,12 +44,11 @@
       "chapters": [{ "title": "关于小玲", "path": "/intro/index" }]
     },
     {
-      "part": "功能",
+      "chapters": [{ "title": "功能列表", "path": "/feature/list" }]
+    },
+    {
+      "part": "普通功能",
       "chapters": [
-        {
-          "title": "功能列表",
-          "path": "/feature/list"
-        },
         {
           "title": "帮助",
           "path": "/feature/help"
@@ -81,6 +84,19 @@
         {
           "title": "群功能",
           "path": "/feature/group-toggle"
+        }
+      ]
+    },
+    {
+      "part": "钓鱼",
+      "chapters": [
+        {
+          "title": "钓鱼",
+          "path": "/fishing/fishing"
+        },
+        {
+          "title": "钓竿",
+          "path": "/fishing/fishing-rod"
         }
       ]
     },
