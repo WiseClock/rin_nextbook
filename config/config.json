@@ -84,6 +84,10 @@
         {
           "title": "群功能",
           "path": "/feature/group-toggle"
+        },
+        {
+          "title": "礼包",
+          "path": "/feature/gift"
         }
       ]
     },
