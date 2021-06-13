@@ -78,6 +78,10 @@
           "path": "/feature/achievements"
         },
         {
+          "title": "鸣谢",
+          "path": "/feature/acknowledgement"
+        },
+        {
           "title": "群功能",
           "path": "/feature/group-toggle"
         },
