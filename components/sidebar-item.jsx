@@ -5,7 +5,7 @@ import HistoryContext from './store/history-context'
 import { Check, Dot } from './svg-icons'
 
 const SideBarItem = ({ item }) => {
-  const { asPath: path } = useRouter()
+  const path = useRouter().asPath.split('#', 2)[0];
   const historyCtx = useContext(HistoryContext)
 
   const [icon, setIcon] = useState(<Dot />)
