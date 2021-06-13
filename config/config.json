@@ -78,12 +78,28 @@
           "path": "/feature/achievements"
         },
         {
-          "title": "猜拳",
-          "path": "/feature/rock-paper-scissors"
-        },
-        {
           "title": "群功能",
           "path": "/feature/group-toggle"
+        },
+        {
+          "title": "人品",
+          "path": "/feature/renpin"
+        },
+        {
+          "title": "几率",
+          "path": "/feature/probability"
+        },
+        {
+          "title": "姻缘",
+          "path": "/feature/love-fate"
+        },
+        {
+          "title": "基情",
+          "path": "/feature/gay-fate"
+        },
+        {
+          "title": "猜拳",
+          "path": "/feature/rock-paper-scissors"
         },
         {
           "title": "礼包",
