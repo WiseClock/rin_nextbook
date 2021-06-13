@@ -9,7 +9,7 @@ import { _ } from './text'
 export default function PageNav() {
   const router = useRouter()
   const { toc } = config
-  const { asPath } = router
+  const asPath = router.asPath.split('#', 2)[0]
 
   // isolate current part array
   const currentPart = toc.find((part) =>
