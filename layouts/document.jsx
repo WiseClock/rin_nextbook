@@ -24,7 +24,7 @@ export default function DocumentLayout({ children, frontMatter }) {
     const Waline = require('@waline/client');
     const waline = Waline({
       el: '#waline',
-      serverURL: 'https://rin-comments.vercel.app',
+      serverURL: 'https://rin-comments.0w0.ca',
       copyright: false,
       placeholder: ' ',
       visitor: true,
