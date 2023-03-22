@@ -108,6 +108,10 @@
         {
           "title": "礼包",
           "path": "/feature/gift"
+        },
+        {
+          "title": "故事",
+          "path": "/feature/story"
         }
       ]
     },
